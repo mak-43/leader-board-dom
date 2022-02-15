@@ -1,5 +1,5 @@
-document.getElementById('top-players').style.color='red'
-document.getElementById('top-blogs').style.color='red'
+document.getElementById('top-players').style.color='green'
+document.getElementById('top-blogs').style.color='green'
 
 const p=document.getElementById('plyr').style.backgroundColor='rgba(0, 0, 255, 0.1)'
 
@@ -12,6 +12,10 @@ document.getElementById('add').addEventListener('click',function(){
     let t=parseInt(input.value)+1
     input.value=t
     console.log(t)
+    if(t==5){
+        document.getElementById('add').disabled=true
+        
+    }
 })
 
 
